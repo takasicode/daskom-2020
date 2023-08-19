@@ -1,0 +1,373 @@
+*
+{
+	margin:0;
+	padding:0; 
+	box-sizing: border-box;
+	font-family:helvetica;	
+}
+body
+{
+	background:#fff; 
+	min-height:175vh;
+}	
+header
+{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding:40px 100px;
+	z-index:100000;
+}
+header.sticky
+{
+	padding:5px 100px;	
+	background: #fff;
+}
+header .logo
+{
+	position:relative;
+	font-weight:700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition:0.6s;
+}
+header ul
+{
+	position:relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li 
+{
+	position:relative;
+	list-style: none;
+}
+header ul li a 
+{
+	position:relative;
+	margin:0 13px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight:bolder;
+	transition:0.6s;
+}
+header ul li a:hover
+{
+	color: gold;
+}
+header.sticky .logo 
+{
+	color: #000;
+}
+header.sticky ul li a 
+{
+	color: #000;
+}
+header.sticky ul li a:hover
+{
+	color:Blue;
+}
+.contact
+{
+	position:relative;
+	min-height:100vh;
+	padding:50px 100px ;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	background:url('Contact_us3.jpg');
+	background-size:cover;
+	height:140vh;
+}
+.contact .content
+{
+	max-width:800px;
+	text-align:center;
+	color:#fff;	
+}
+.contact .content h2
+{
+	font-size:36px;
+	font-weight:500;
+	color:#fff;
+}
+.contact .content p
+{
+	font-weight:300;
+	color:#fff;
+}
+.container
+{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:30px;
+}
+.container .ContactInfo
+{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+}
+.container .ContactInfo .box
+{
+	position:relative;
+	padding:20px 0;
+	display:flex;
+}
+.container .ContactInfo .box .icon
+{
+	min-width:60px;
+	height:60px;
+	background:#fff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:50%;
+	font-size:22px;
+}
+.container .ContactInfo .box .text
+{
+	display:flex;
+	margin-left:28px;
+	font-size:16px;
+	color:white;
+	flex-direction:column;
+	font-weight:300;
+}
+.container .ContactInfo .box .text h3
+{
+	font-weight:500;
+	color:#00bcd4;
+}
+.contactform
+{
+	width:40%;
+	padding:40px;
+	background:#fff;
+}
+.contactform h2
+{
+	font-size: 30px;
+	color:#333;
+	font-weight:500;
+}
+.contactform .inputBox
+{
+	position:relative;
+	width:100%;
+	margin-top:10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+	width:100%;
+	padding:5px 0 ;
+	font-size:16px;
+	margin:10px 0;
+	border:none;
+	border-bottom:2px solid #333;
+	outline:nb;
+	resize:none;
+}
+.contactform .inputBox span
+{
+	position:absolute;
+	left:0;
+	padding:5px 0 ;
+	font-size:16px;
+	margin:10px 0;
+	pointer-events:none;
+	transition:0.5s ;
+	color:#666;
+}
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+{
+	color:#e91e63;
+	font-size:12px;
+	transform:translateY(-20px);
+}
+.contactform .inputBox input[type="submit"]
+{
+	width:100px;
+	background:#00bcd4;
+	color:#fff;   
+	border:none;
+	cursor:pointer;
+	padding:10px;
+	font-size:18px;
+}
+@media (max-width:991px)
+{
+	.contact
+	{
+		pading: 50px;
+	}
+	.container
+	{
+		flex-direction:column;
+	}
+	.container .ContactInfo
+	{
+		margin-bottom:40px;
+	}
+	.container .ContactInfo,
+	.contactForm
+	{
+		width:100%;
+	}
+}
+footer
+{
+	position:relative;
+	width:100%;
+	height:auto;
+	padding:50px 100px;
+	background:#111;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+footer .container1
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	flex-direction:row;
+}
+footer .container1 .sec
+{
+	margin-right:30px;
+}
+footer .container1 .sec.aboutus
+{
+	width:40%;
+}
+footer .container1 h2
+{
+	position:relative;
+	color:#fff;
+	font-weight:500;
+	margin-bottom:15px;
+}
+footer .container1 h2:before
+{
+	content:'';
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	width:50px;
+	height:2px;
+	background:#f00;
+}
+footer p
+{
+	color:#999;
+}
+.sci 
+{
+	margin-top:20px;
+	display:flex;
+}
+.sci li
+{
+	list-style:none;	
+}
+.sci li a
+{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background:#222;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-right:10px;
+	text-decoration:none;
+	border-radius:4px;
+}
+.sci li a:hover
+{
+	background: #f00;
+}
+.sci li a .fa
+{
+	color:#fff;
+	font-size:20px;
+}
+.quickLinks
+{
+	position: relative;
+	width: 25%;
+}
+.quickLinks ul li
+{
+	list-style:none;
+}
+.quickLinks ul li a
+{
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.quickLinks ul li a:hover
+{
+	color: #fff;
+}
+.contact1
+{
+	width: calc(35% - 60px);
+	margin-right:0 !important;
+}
+.contact1 .info
+{
+	position:relative;
+}
+.contact1 .info li
+{
+	display:flex;
+	margin-bottom:16px;
+}
+.contact1 .info li span:nth-child(1)
+{
+	color:#fff;
+	font-size:20px;
+	margin-right:10px;
+}
+.contact1 .info li span
+{
+	color:#999;
+}
+.contact1 .info li a
+{
+	color:#999;
+	text-decoration:none;
+}
+.contact1 .info li a:hover
+{
+	color:#fff;
+}
+.copyright
+{
+	width:100%;
+	background:#181818;
+	padding:8px 100px;
+	text-align:center;
+	color:#999;
+}

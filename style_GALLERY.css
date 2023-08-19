@@ -1,0 +1,290 @@
+*
+{
+	margin:0;
+	padding:0; 
+	box-sizing: border-box;
+	font-family:helvetica;	
+}
+body
+{
+	background:#fff; 
+	min-height:225vh;
+}	
+header
+{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding:40px 100px;
+	z-index:100000;
+}
+header.sticky
+{
+	padding:5px 100px;	
+	background: #fff;
+}
+header .logo
+{
+	position:relative;
+	font-weight:700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition:0.6s;
+}
+header ul
+{
+	position:relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li 
+{
+	position:relative;
+	list-style: none;
+}
+header ul li a 
+{
+	position:relative;
+	margin:0 13px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight:bolder;
+	transition:0.6s;
+}
+header ul li a:hover
+{
+	color: gold;
+}
+header.sticky .logo 
+{
+	color: #000;
+}
+header.sticky ul li a 
+{
+	color: #000;
+}
+header.sticky ul li a:hover
+{
+	color:Blue;
+}
+.banner
+{
+	position:relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url('background2.jpg');
+	background-size: cover;
+}
+.tengah
+{
+	font-family:helvetica;
+	color:#fff;
+	position:relative;
+	top:30vh;
+	min-height:20vh;
+	padding:50px 100px;
+	text-align:center;
+	height:50vh;
+}
+div.group
+{
+	margin-top:50vh;
+	padding:120px;
+	background:#111;
+	height:135vh;
+} 
+div.group div.container1
+{
+	position:absolute;
+	display:flex; 
+	height:calc(100% - 200px);
+	width:calc(100% - 200px);
+	z-index:100;
+}
+div.group div.container1 div.box
+{
+	position:relative;
+	width:25%;
+	height:100%;
+	overflow:hidden;
+	border-right:10px solid #111;
+} 
+div.group div.container1 div.box:last-child
+{
+	border-right:none; 
+}
+div.group div.container1 div.box div.imgBx
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	transition:0.5%;
+	opacity:0.5;
+	filter:grayscale(1);
+} 
+div.group div.container1 div.box div.imgBx:hover
+{
+	opacity:1;
+	filter:grayscale(0);
+}
+div.group div.container1 div.box div.imgBx img
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+footer
+{
+	margin-top:0%;
+	position:relative;
+	width:100%;
+	height:auto;
+	padding:50px 100px;
+	background:#111;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+footer .container1
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	flex-direction:row;
+}
+footer .container1 .sec
+{
+	margin-right:30px;
+}
+footer .container1 .sec.aboutus
+{
+	width:40%;
+}
+footer .container1 h2
+{
+	position:relative;
+	color:#fff;
+	font-weight:500;
+	margin-bottom:15px;
+}
+footer .container1 h2:before
+{
+	content:'';
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	width:50px;
+	height:2px;
+	background:#f00;
+}
+footer p
+{
+	color:#999;
+}
+.sci 
+{
+	margin-top:20px;
+	display:flex;
+}
+.sci li
+{
+	list-style:none;	
+}
+.sci li a
+{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background:#222;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-right:10px;
+	text-decoration:none;
+	border-radius:4px;
+}
+.sci li a:hover
+{
+	background: #f00;
+}
+.sci li a .fa
+{
+	color:#fff;
+	font-size:20px;
+}
+.quickLinks
+{
+	position: relative;
+	width: 25%;
+}
+.quickLinks ul li
+{
+	list-style:none;
+}
+.quickLinks ul li a
+{
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.quickLinks ul li a:hover
+{
+	color: #fff;
+}
+.contact1
+{
+	width: calc(35% - 60px);
+	margin-right:0 !important;
+}
+.contact1 .info
+{
+	position:relative;
+}
+.contact1 .info li
+{
+	display:flex;
+	margin-bottom:16px;
+}
+.contact1 .info li span:nth-child(1)
+{
+	color:#fff;
+	font-size:20px;
+	margin-right:10px;
+}
+.contact1 .info li span
+{
+	color:#999;
+}
+.contact1 .info li a
+{
+	color:#999;
+	text-decoration:none;
+}
+.contact1 .info li a:hover
+{
+	color:#fff;
+}
+.copyright
+{
+	width:100%;
+	background:#181818;
+	padding:8px 100px;
+	text-align:center;
+	color:#999;
+}
